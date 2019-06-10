@@ -1,19 +1,29 @@
 from random import randint
 import time
 
-nome1 = input("digite o primeiro nome: ")
-nome2 = input("digite o segundo nome: ")
-resultado = randint(0,1)
+print("Calculadora do Amor")
 
-print("Consultando culpido...")
+nome1 = input("Digite o seu nome:")
+nome1 = input("Digite o outro nome:")
+resultado = randint(0,100)
+
+print("Consultando o horóscopo...")
 time.sleep(1)
-print("Consultando culpido...")
+print("Consultando as estrelas...")
 time.sleep(1)
-print("Consultando culpido...")
+print("Consultando o culpido...")
 time.sleep(1)
 
+if resultado <=25:
+    print("Pouca probabilidade", resultado, "%")
 
-if resultado == 1:
-    print("Vai dar namoro...", nome1, "<3", nome2)
-else:
-    print("Não vai dar namoro...", nome1, "</3", nome2)
+elif resultado <=50:
+    print("Pode ser que dê certo, mas talvez só amizade", resultado, "%")
+
+elif resultado <=75:
+    print("Vai dar namoro", resultado, "%")
+
+elif resultado  <=100:
+    print("É amor verdadeiro", resultado, "%")
+
+
