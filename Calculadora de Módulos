@@ -1,0 +1,11 @@
+print("CALCULADORA DE MÓDULOS")
+string = input("Lista a ser inserida:")
+split = string.split(',')
+official_list = []
+for num in split:
+    num = int(num)
+    if num < 0:
+        official_list.append(num * -1)
+    else:
+        official_list.append(num)
+print(official_list)
