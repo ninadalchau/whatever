@@ -459,439 +459,445 @@ def verdade_amigos_pesado(pergunta):
 if jogo.lower() == "casal":
     nome1 = input("Nome1:")
     nome2 = input("Nome2:")
-    pesado = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
-    print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
-    pesado = pesado.replace("ã", "a")
-    if pesado.lower() == "nao":
-        time.sleep(0.3)
-        print("Girando a roleta")
-        time.sleep(1)
-        resultado = randint(0, 1)
-        if resultado == 0:
-            ordem = randint(0, 1)
-            if ordem == 0:
-                print("Verdade para", nome1)
+    while True:
+        pesado = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
+        print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
+        pesado = pesado.replace("ã", "a")
+        if pesado.lower() == "nao":
+            time.sleep(0.3)
+            print("Girando a roleta")
+            time.sleep(1)
+            resultado = randint(0, 1)
+            if resultado == 0:
+                ordem = randint(0, 1)
+                if ordem == 0:
+                    print("Verdade para", nome1)
+                else:
+                    print("Verdade para", nome2)
+                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                manual1 = manual1.lower()
+                manual1 = manual1.replace("ã", "a")
+                if manual1 == "nao":
+                    pergunta = randint(0, 25)
+                    verdade_casal(pergunta)
+                    input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                else:
+                    input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
             else:
-                print("Verdade para", nome2)
-            manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-            manual1 = manual1.lower()
-            manual1 = manual1.replace("ã", "a")
-            if manual1 == "nao":
-                pergunta = randint(0, 25)
-                verdade_casal(pergunta)
-                print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                ordem = randint(0, 1)
+                if ordem == 0:
+                    print("Desafio para", nome1)
+                else:
+                    print("Desafio para", nome2)
+                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                manual2 = manual2.lower()
+                manual2 = manual2.replace("ã", "a")
+                if manual2 == "nao":
+                    pergunta = randint(0, 25)
+                    desafio_casal(pergunta)
+                    input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                else:
+                    input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
         else:
-            ordem = randint(0, 1)
-            if ordem == 0:
-                print("Desafio para", nome1)
+            time.sleep(0.3)
+            print("Girando a roleta")
+            time.sleep(1)
+            resultado = randint(0, 1)
+            if resultado == 0:
+                ordem = randint(0, 1)
+                if ordem == 0:
+                    print("Verdade para", nome1)
+                else:
+                    print("Verdade para", nome2)
+                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                manual1 = manual1.lower()
+                manual1 = manual1.replace("ã", "a")
+                if manual1 == "nao":
+                    pergunta = randint(0, 25)
+                    verdade_casal_pesado(pergunta)
+                    input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                else:
+                    input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
             else:
-                print("Desafio para", nome2)
-            manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-            manual2 = manual2.lower()
-            manual2 = manual2.replace("ã", "a")
-            if manual2 == "nao":
-                pergunta = randint(0, 25)
-                desafio_casal(pergunta)
-                print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-    else:
-        time.sleep(0.3)
-        print("Girando a roleta")
-        time.sleep(1)
-        resultado = randint(0, 1)
-        if resultado == 0:
-            ordem = randint(0, 1)
-            if ordem == 0:
-                print("Verdade para", nome1)
-            else:
-                print("Verdade para", nome2)
-            manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-            manual1 = manual1.lower()
-            manual1 = manual1.replace("ã", "a")
-            if manual1 == "nao":
-                pergunta = randint(0, 25)
-                verdade_casal_pesado(pergunta)
-                print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-        else:
-            ordem = randint(0, 1)
-            if ordem == 0:
-                print("Desafio para", nome1)
-            else:
-                print("Desafio para", nome2)
-            manual2 = input("Você quer fazer o casaldesafio manualmente?(sim ou não)")
-            manual2 = manual2.lower()
-            manual2 = manual2.replace("ã", "a")
-            if manual2 == "nao":
-                pergunta = randint(0, 25)
-                desafio_casal_pesado(pergunta)
-                print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                ordem = randint(0, 1)
+                if ordem == 0:
+                    print("Desafio para", nome1)
+                else:
+                    print("Desafio para", nome2)
+                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                manual2 = manual2.lower()
+                manual2 = manual2.replace("ã", "a")
+                if manual2 == "nao":
+                    pergunta = randint(0, 25)
+                    desafio_casal_pesado(pergunta)
+                    input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                else:
+                    input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+
 else:
     quantidade = input("Quantas pessoas iram jogar?(Máx.6)")
     if quantidade == "2":
         nome1 = input("Nome1:")
         nome2 = input("Nome2:")
-        pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
-        print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
-        pesadoamigo = pesadoamigo.replace("ã", "a")
-        if pesadoamigo == "nao":
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 2)
-                if ordem == 0:
-                    print("Verdade para", nome1)
+        while True:
+            pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
+            print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
+            pesadoamigo = pesadoamigo.replace("ã", "a")
+            if pesadoamigo == "nao":
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 2)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    else:
+                        print("Verdade para", nome2)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Verdade para", nome2)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 2)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    else:
+                        print("Desafio para", nome2)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
             else:
-                ordem = randint(0, 2)
-                if ordem == 0:
-                    print("Desafio para", nome1)
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 1)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    else:
+                        print("Verdade para", nome2)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Desafio para", nome2)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-        else:
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 1)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                else:
-                    print("Verdade para", nome2)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                ordem = randint(0, 1)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                else:
-                    print("Desafio para", nome2)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 1)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    else:
+                        print("Desafio para", nome2)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
     elif quantidade == "3":
         nome1 = input("Nome1:")
         nome2 = input("Nome2:")
         nome3 = input("Nome3:")
-        pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
-        print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
-        pesadoamigo = pesadoamigo.replace("ã", "a")
-        if pesadoamigo == "nao":
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 2)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                elif ordem == 1:
-                    print("Verdade para", nome2)
+        while True:
+            pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
+            print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
+            pesadoamigo = pesadoamigo.replace("ã", "a")
+            if pesadoamigo == "nao":
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 2)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    elif ordem == 1:
+                        print("Verdade para", nome2)
+                    else:
+                        print("Verdade para", nome3)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Verdade para", nome3)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 2)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    elif ordem == 1:
+                        print("Desafio para", nome2)
+                    else:
+                        print("Desafio para", nome3)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
             else:
-                ordem = randint(0, 2)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                elif ordem == 1:
-                    print("Desafio para", nome2)
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 2)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    elif ordem == 1:
+                        print("Verdade para", nome2)
+                    else:
+                        print("Verdade para", nome3)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Desafio para", nome3)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-        else:
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 2)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                elif ordem == 1:
-                    print("Verdade para", nome2)
-                else:
-                    print("Verdade para", nome3)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                ordem = randint(0, 2)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                elif ordem == 1:
-                    print("Desafio para", nome2)
-                else:
-                    print("Desafio para", nome3)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 2)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    elif ordem == 1:
+                        print("Desafio para", nome2)
+                    else:
+                        print("Desafio para", nome3)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
     elif quantidade == "4":
         nome1 = input("Nome1:")
         nome2 = input("Nome2:")
         nome3 = input("Nome3:")
         nome4 = input("Nome4:")
-        pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
-        print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
-        pesadoamigo = pesadoamigo.replace("ã", "a")
-        if pesadoamigo == "nao":
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 3)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                elif ordem == 1:
-                    print("Verdade para", nome2)
-                elif ordem == 2:
-                    print("Verdade para", nome3)
+        while True:
+            pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
+            print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
+            pesadoamigo = pesadoamigo.replace("ã", "a")
+            if pesadoamigo == "nao":
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 3)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    elif ordem == 1:
+                        print("Verdade para", nome2)
+                    elif ordem == 2:
+                        print("Verdade para", nome3)
+                    else:
+                        print("Verdade para", nome4)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Verdade para", nome4)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 3)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    elif ordem == 1:
+                        print("Desafio para", nome2)
+                    elif ordem == 2:
+                        print("Desafio para", nome3)
+                    else:
+                        print("Desafio para", nome4)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
             else:
-                ordem = randint(0, 3)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                elif ordem == 1:
-                    print("Desafio para", nome2)
-                elif ordem == 2:
-                    print("Desafio para", nome3)
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 3)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    elif ordem == 1:
+                        print("Verdade para", nome2)
+                    elif ordem == 2:
+                        print("Verdade para", nome3)
+                    else:
+                        print("Verdade para", nome4)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Desafio para", nome4)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-        else:
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 3)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                elif ordem == 1:
-                    print("Verdade para", nome2)
-                elif ordem == 2:
-                    print("Verdade para", nome3)
-                else:
-                    print("Verdade para", nome4)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                ordem = randint(0, 3)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                elif ordem == 1:
-                    print("Desafio para", nome2)
-                elif ordem == 2:
-                    print("Desafio para", nome3)
-                else:
-                    print("Desafio para", nome4)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 3)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    elif ordem == 1:
+                        print("Desafio para", nome2)
+                    elif ordem == 2:
+                        print("Desafio para", nome3)
+                    else:
+                        print("Desafio para", nome4)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
     elif quantidade == "5":
         nome1 = input("Nome1:")
         nome2 = input("Nome2:")
         nome3 = input("Nome3:")
         nome4 = input("Nome4:")
         nome5 = input("Nome5:")
-        pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
-        print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
-        pesadoamigo = pesadoamigo.replace("ã", "a")
-        if pesadoamigo == "nao":
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 4)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                elif ordem == 1:
-                    print("Verdade para", nome2)
-                elif ordem == 2:
-                    print("Verdade para", nome3)
-                elif ordem == 3:
-                    print("Verdade para", nome4)
+        while True:
+            pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
+            print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
+            pesadoamigo = pesadoamigo.replace("ã", "a")
+            if pesadoamigo == "nao":
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 4)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    elif ordem == 1:
+                        print("Verdade para", nome2)
+                    elif ordem == 2:
+                        print("Verdade para", nome3)
+                    elif ordem == 3:
+                        print("Verdade para", nome4)
+                    else:
+                        print("Verdade para", nome5)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Verdade para", nome5)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 4)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    elif ordem == 1:
+                        print("Desafio para", nome2)
+                    elif ordem == 2:
+                        print("Desafio para", nome3)
+                    elif ordem == 3:
+                        print("Desafio para", nome4)
+                    else:
+                        print("Desafio para", nome5)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
             else:
-                ordem = randint(0, 4)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                elif ordem == 1:
-                    print("Desafio para", nome2)
-                elif ordem == 2:
-                    print("Desafio para", nome3)
-                elif ordem == 3:
-                    print("Desafio para", nome4)
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 4)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    elif ordem == 1:
+                        print("Verdade para", nome2)
+                    elif ordem == 2:
+                        print("Verdade para", nome3)
+                    elif ordem == 3:
+                        print("Verdade para", nome4)
+                    else:
+                        print("Verdade para", nome5)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Desafio para", nome5)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-        else:
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 4)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                elif ordem == 1:
-                    print("Verdade para", nome2)
-                elif ordem == 2:
-                    print("Verdade para", nome3)
-                elif ordem == 3:
-                    print("Verdade para", nome4)
-                else:
-                    print("Verdade para", nome5)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                ordem = randint(0, 4)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                elif ordem == 1:
-                    print("Desafio para", nome2)
-                elif ordem == 2:
-                    print("Desafio para", nome3)
-                elif ordem == 3:
-                    print("Desafio para", nome4)
-                else:
-                    print("Desafio para", nome5)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 4)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    elif ordem == 1:
+                        print("Desafio para", nome2)
+                    elif ordem == 2:
+                        print("Desafio para", nome3)
+                    elif ordem == 3:
+                        print("Desafio para", nome4)
+                    else:
+                        print("Desafio para", nome5)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
     elif quantidade == "6":
         nome1 = input("Nome1:")
         nome2 = input("Nome2:")
@@ -899,108 +905,109 @@ else:
         nome4 = input("Nome4:")
         nome5 = input("Nome5:")
         nome6 = input("Nome6:")
-        pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
-        print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
-        pesadoamigo = pesadoamigo.replace("ã", "a")
-        if pesadoamigo == "nao":
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 4)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                elif ordem == 1:
-                    print("Verdade para", nome2)
-                elif ordem == 2:
-                    print("Verdade para", nome3)
-                elif ordem == 3:
-                    print("Verdade para", nome4)
-                elif ordem == 4:
-                    print("Verdade para", nome5)
+        while True:
+            pesadoamigo = input("Você quer jogar no modo pesado(+18)?(sim ou não)")
+            print("LEMBRE-SE QUE TUDO TEM QUER SER FEITO COM CONSENTIMENTO")
+            pesadoamigo = pesadoamigo.replace("ã", "a")
+            if pesadoamigo == "nao":
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 4)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    elif ordem == 1:
+                        print("Verdade para", nome2)
+                    elif ordem == 2:
+                        print("Verdade para", nome3)
+                    elif ordem == 3:
+                        print("Verdade para", nome4)
+                    elif ordem == 4:
+                        print("Verdade para", nome5)
+                    else:
+                        print("Verdade para", nome6)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Verdade para", nome6)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 4)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    elif ordem == 1:
+                        print("Desafio para", nome2)
+                    elif ordem == 2:
+                        print("Desafio para", nome3)
+                    elif ordem == 3:
+                        print("Desafio para", nome4)
+                    elif ordem == 4:
+                        print("Desafio para", nome5)
+                    else:
+                        print("Desafio para", nome6)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
             else:
-                ordem = randint(0, 4)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                elif ordem == 1:
-                    print("Desafio para", nome2)
-                elif ordem == 2:
-                    print("Desafio para", nome3)
-                elif ordem == 3:
-                    print("Desafio para", nome4)
-                elif ordem == 4:
-                    print("Desafio para", nome5)
+                time.sleep(0.3)
+                print("Girando a roleta")
+                time.sleep(1)
+                resultado = randint(0, 1)
+                if resultado == 0:
+                    ordem = randint(0, 4)
+                    if ordem == 0:
+                        print("Verdade para", nome1)
+                    elif ordem == 1:
+                        print("Verdade para", nome2)
+                    elif ordem == 2:
+                        print("Verdade para", nome3)
+                    elif ordem == 3:
+                        print("Verdade para", nome4)
+                    elif ordem == 4:
+                        print("Verdade para", nome5)
+                    else:
+                        print("Verdade para", nome6)
+                    manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
+                    manual1 = manual1.lower()
+                    manual1 = manual1.replace("ã", "a")
+                    if manual1 == "nao":
+                        pergunta = randint(0, 25)
+                        verdade_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
-                    print("Desafio para", nome6)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-        else:
-            time.sleep(0.3)
-            print("Girando a roleta")
-            time.sleep(1)
-            resultado = randint(0, 1)
-            if resultado == 0:
-                ordem = randint(0, 4)
-                if ordem == 0:
-                    print("Verdade para", nome1)
-                elif ordem == 1:
-                    print("Verdade para", nome2)
-                elif ordem == 2:
-                    print("Verdade para", nome3)
-                elif ordem == 3:
-                    print("Verdade para", nome4)
-                elif ordem == 4:
-                    print("Verdade para", nome5)
-                else:
-                    print("Verdade para", nome6)
-                manual1 = input("Você quer fazer a pergunta manualmente?(sim ou não)")
-                manual1 = manual1.lower()
-                manual1 = manual1.replace("ã", "a")
-                if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-            else:
-                ordem = randint(0, 4)
-                if ordem == 0:
-                    print("Desafio para", nome1)
-                elif ordem == 1:
-                    print("Desafio para", nome2)
-                elif ordem == 2:
-                    print("Desafio para", nome3)
-                elif ordem == 3:
-                    print("Desafio para", nome4)
-                elif ordem == 4:
-                    print("Desafio para", nome5)
-                else:
-                    print("Desafio para", nome6)
-                manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
-                manual2 = manual2.lower()
-                manual2 = manual2.replace("ã", "a")
-                if manual2 == "nao":
-                    pergunta = randint(0, 25)
-                    desafio_amigos_pesado(pergunta)
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
-                else:
-                    print(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    ordem = randint(0, 4)
+                    if ordem == 0:
+                        print("Desafio para", nome1)
+                    elif ordem == 1:
+                        print("Desafio para", nome2)
+                    elif ordem == 2:
+                        print("Desafio para", nome3)
+                    elif ordem == 3:
+                        print("Desafio para", nome4)
+                    elif ordem == 4:
+                        print("Desafio para", nome5)
+                    else:
+                        print("Desafio para", nome6)
+                    manual2 = input("Você quer fazer o desafio manualmente?(sim ou não)")
+                    manual2 = manual2.lower()
+                    manual2 = manual2.replace("ã", "a")
+                    if manual2 == "nao":
+                        pergunta = randint(0, 25)
+                        desafio_amigos_pesado(pergunta)
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
+                    else:
+                        input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
