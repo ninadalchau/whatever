@@ -4,6 +4,27 @@ jogo = input("Se você quiser jogar no modo de amigos, digite 'amigos' "
 from random import randint
 import time
 
+desafio_casal_pesado = {
+    '1': "DESAFIO: Tire a blusa de seu/sua parceira usando somente os dentes",
+    '2': "DESAFIO: Tire duas peças da sua roupa",
+    '3': "DESAFIO: Chupe um dos dedos delx",
+    '4': "DESAFIO: Acaricie o corpo delx enquanto faz uma cara senxual",
+    '5': "DESAFIO: Não se mexa por 1 min. e permita que elx faça o que quiser com você,"
+         "\nse estx disse não, pare imediatamente",
+    '6': "DESAFIO: Faça uma mímica sexual e elx terá que adivinhar o ato",
+    '7': "DESAFIO: Beije a parte inferior da barriga delx",
+    '8': "DESAFIO: Imite poses de sessão de fotos sexy",
+    '9': "DESAFIO: Beije elx da forma mais intensa possível",
+    '10': "DESAFIO: Beije uma parte da bunda delx",
+    '11': "DESAFIO: De olhos fechados, elx coloca a sua mão em alguma parte do corpo delx,"
+              "\ne vocÊ terá que adivinhar que parte é aquela",
+    '12': "DESAFIO: De um tapa na bunda delx sem nada por cima",
+    '13': "DESAFIO: Troquem toques em suas partes íntimas",
+    '14': "DESAFIO: Tire sua parte íntima e coloque na sua cabeça, ",
+          "\nfique assim por 3 rodadas",
+    '15': "DESAFIO: Troquem toque no mamilo",
+    '16': "DESAFIO: Permita que elx grave você dançando funk ou rebolando",
+
 def desafio_casal_pesado(pergunta):
     if pergunta == 0:
         print("DESAFIO: Tire a blusa de seu/sua parceira usando somente os dentes")
@@ -14,7 +35,26 @@ def desafio_casal_pesado(pergunta):
     elif pergunta == 3:
         print("DESAFIO: Chupe um dos dedos delx")
     elif pergunta == 4:
-        print("DESAFIO: Acaricie o corpo delx enquanto faz uma cara senxual")
+        print("DESAFIO: Acaricie o corpo deldesafio_casal_pesado = {
+    '1': "DESAFIO: Tire a blusa de seu/sua parceira usando somente os dentes",
+    '2': "DESAFIO: Tire duas peças da sua roupa",
+    '3': "DESAFIO: Chupe um dos dedos delx",
+    '4': "DESAFIO: Acaricie o corpo delx enquanto faz uma cara senxual",
+    '5': "DESAFIO: Não se mexa por 1 min. e permita que elx faça o que quiser com você,"
+         "\nse estx disse não, pare imediatamente",
+    '6': "DESAFIO: Faça uma mímica sexual e elx terá que adivinhar o ato",
+    '7': "DESAFIO: Beije a parte inferior da barriga delx",
+    '8': "DESAFIO: Imite poses de sessão de fotos sexy",
+    '9': "DESAFIO: Beije elx da forma mais intensa possível",
+    '10': "DESAFIO: Beije uma parte da bunda delx",
+    '11': "DESAFIO: De olhos fechados, elx coloca a sua mão em alguma parte do corpo delx,"
+              "\ne vocÊ terá que adivinhar que parte é aquela",
+    '12': "DESAFIO: De um tapa na bunda delx sem nada por cima",
+    '13': "DESAFIO: Troquem toques em suas partes íntimas",
+    '14': "DESAFIO: Tire sua parte íntima e coloque na sua cabeça, ",
+          "\nfique assim por 3 rodadas",
+    '15': "DESAFIO: Troquem toque no mamilo",
+    '16': "DESAFIO: Permita que elx grave você dançando funk ou rebolando",x enquanto faz uma cara senxual")
     elif pergunta == 5:
         print("DESAFIO: Não se mexa por 1 min. e permita que elx faça o que quiser com você,"
               "\nse estx disse não, pare imediatamente")
