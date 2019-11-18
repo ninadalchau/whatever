@@ -9,13 +9,26 @@ regiao = cpf.replace("ã", "a")
 regiao = cpf.replace("í", "i")
 regiao = cpf.replace("ô", "o")
 
+
 def somador(cpf):
     soma = 0
     for num in cpf:
         soma += int(num)
     soma = str(soma)
     if soma[0] == soma[1]:
-            print("CPF válido")
+        print("CPF válido, pois a soma resulta em", soma, "validando este CPF")
+    else:
+        multiplicador = 10
+        somacpf = 0
+        for numero in cpf:
+            valor = int(numero) * multiplicador
+            multiplicador = multiplicador - 1
+            somacpf += valor
+        if (somacpf % 11) == 0 or (somacpf % 11) == 1:
+            print("CPF válido, pois a regra valida este CPF")
+        else:
+            print("CPF inválido, pois a soma resulta em", soma, "possuindo dois dígitos diferentes")
+
 
 if cpf.isdigit():
     if len(cpf) == 11:
@@ -40,10 +53,10 @@ if cpf.isdigit():
         elif cpf[8] == 9 and regiao.lower() == "parana" or "pr" or "santa catarina" or "sc":
             somador(cpf)
         else:
-            print("CPF inválido")
+            print("CPF inválido, pois não condiz com a região inserida")
     else:
-        print("CPF inválido")
+        print("CPF inválido, pois não possui 11 dígitos")
 else:
-    print("CPF inválido")
-    
+    print("CPF inválido, pois possui letras")
+
 print("Created by Marina")
