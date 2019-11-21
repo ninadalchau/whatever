@@ -158,15 +158,14 @@ desafio_amigos = {
     25: "DESAFIO: Beba um copo de água usando os pés",
 }
 
-verdade_amigos = {
-
-    0: "QuaL a sua mania mais nojenta?",
+verdade_amigos ={
+    0: "Qual a sua mania mais nojenta?",
     1: "O que você faria se tivesse com dor de barriga e tivesse que"
-              "\ncagar em um banheiro público, mas acabasse o papel higiênico?",
+        "\ncagar em um banheiro público, mas acabasse o papel higiênico?",
     2: "Qual a pessoa mais aleatória que você ja stalkeou nas redes sociais?",
     3: "Quantos dias vocÊ ja ficou sem tomar banho?",
     4: "Conte aqui uma coisa que você espera que os seus pais nunca descubrem?",
-    5: "VocÊ já cagou no mato?",
+    5: "Você já cagou no mato?",
     6: "O que você faria se fosse do sexo oposto por um dia?",
     7: "Você já roubou algo?",
     8: "Qual foi a sua maior conquista?",
@@ -190,64 +189,64 @@ verdade_amigos = {
 }
 
 desafio_amigos_pesado = {
-    0: "DESAFIO: Simule o seu olhar mais sexy para alguém que esteja jogando",
-    1: "DESAFIO: Morda de leve o pescoço de alguém da roda",
-    2: "DESAFIO: Com os olhos fechados, encoste a mão em alguém da roda "
+    0: "DESAFIO: Imite como uma gata mia ao transar",
+    1: "DESAFIO: Simule o seu olhar mais sexy para alguém que esteja jogando",
+    2: "DESAFIO: Morda de leve o pescoço de alguém da roda",
+    3: "DESAFIO: Com os olhos fechados, encoste a mão em alguém da roda"
               "\ne adivinhe qual é a parte do corpo (com consentimento)",
-    3: "DESAFIO: Simule um sexo oral com uma fruta",
-    4: "DESAFIO: Beije alguém da roda (com consentimento)",
-    5: "DESAFIO: Coloque um cubo de gelo na boca e beije "
+    4: "DESAFIO: Simule um sexo oral com uma fruta",
+    5: "DESAFIO: Beije alguém da roda (com consentimento)",
+    6: "DESAFIO: Coloque um cubo de gelo na boca e beije "
               "\no pescoço da pessoa a sua direita",
-    6: "DESAFIO: Mande uma mensagem de voz sexy para o seu crush",
-    7: "DESAFIO: Feche os olhos, alguém da roda de te dá um "
-              "\nbeijo e você precisa adivinhar quem é",
-    8: "DESAFIO: De um beijo (do jeito que quiser) em todos os participantes",
-    9: "DESAFIO: Sente-se no colo de alguém por 10 min",
-    10: "DESAFIO: Diga algo muito sujo a pessoa a sua esquerda",
-    11: "DESAFIO: De uma aula de educação sexual",
-    12: "DESAFIO: De uma mordida em alguém da roda",
-    13: "DESAFIO: Ensine os outros integrantes a fazer o quadradinho",
-    14: "DESAFIO: Ensine a fazer o sexo oral perfeito utilizando uma banana",
-    15: "DESAFIO: Deixe que alguém do grupo faça um chupão nas suas costas",
-    16: "DESAFIO: Simule um orgasmo",
-    17: "DESAFIO: Troque de blusa com algum integrante do grupo",
-    18: "DESAFIO: Ensine o grupo a fazer um strip-tease",
-    19: "DESAFIO: Escolha duas pessoas e deem um beijo triplo",
-    20: "DESAFIO: Bata na bunda de uma mulher e um homem da roda",
-    21: "DESAFIO: Faça uma posição sexy e deixe todos os outros apreciarem",
-    22: "DESAFIO: Imite um coelho transando intensamente com um travesseiro",
-    23: "DESAFIO: Mostre a cor da sua cueca ou calcinha para todos",
-    24: "DESAFIO: Permite que tirem uma foto sua com outra pessoa na posição bunda-bunda",
-    25: "DESAFIO: Imite como uma gata miando", 
+    7: "DESAFIO: Mande uma mensagem de voz sexy para o seu crush",
+    8: "DESAFIO: Feche os olhos, alguém da roda de te dá um "
+          "\nbeijo e você precisa adivinhar quem é",
+    9: "DESAFIO: De um beijo (do jeito que quiser) em todos os participantes",
+    10: "DESAFIO: Sente-se no colo de alguém por 10 min",
+    11: "DESAFIO: Diga algo muito sujo a pessoa a sua esquerda",
+    12: "DESAFIO: De uma aula de educação sexual",
+    13: "DESAFIO: De uma mordida em alguém da roda",
+    14: "DESAFIO: Ensine os outros integrantes a fazer o quadradinho",
+    15: "DESAFIO: Ensine a fazer o sexo oral perfeito utilizando uma banana",
+    16: "DESAFIO: Deixe que alguém do grupo faça um chupão nas suas costas",
+    17: "DESAFIO: Simule um orgasmo",
+    18: "DESAFIO: Troque de blusa com algum integrante do grupo",
+    19: "DESAFIO: Ensine o grupo a fazer um strip-tease",
+    20: "DESAFIO: Escolha duas pessoas e deem um beijo triplo",
+    21: "DESAFIO: Bata na bunda de uma mulher e um homem da roda",
+    22: "DESAFIO: Faça uma posição sexy e deixe todos os outros apreciarem",
+    23: "DESAFIO: Imite um coelho transando intensamente com um travesseiro",
+    24: "DESAFIO: Mostre a cor da sua cueca ou calcinha para todos",
+    25: "DESAFIO: Permite que tirem uma foto sua com outra pessoa na posição bunda-bunda",
 }
 
-verdade_amigos_pesado = {
-    0: "Qual parte do corpo você beijaria da pessoa a sua esquerda?",
-    1: "Que tipo de pornografia te excita?",
-    2: "Já fez strip-tease?",
-    3: "Já fez sexo virtual?",
-    4: "Em casa ou no motel?",
-    5: "Já foi num sex-shop?",
-    6: "O que você gostaria de comprar em um sex-shop?",
-    7: "Já ficou com alguém comprometido?",
-    8: "Já usou algo pra lubrificar que não era lubrificante?",
-    9: "Já foi pego no flagra transando ou e masturbando?",
-    10: "Já ficou com vontade de vomitar durante o sexo oral?",
-    11: "já beijou a três?",
-    12: "O que você tem mais medo que te aconteça durante o sexo?",
-    13: "Prefere devagarzinho ou rápido?",
-    14: "Você toparia usar uma cueca/calcinha comestível?",
-    15: "No que vocÊ pensa enquanto está se masturbando?",
-    16: "Qual o segredo pra te deixar louco de tesão?",
-    17: "Qual o seu segredo pra deixar alguém louco de tesão?",
-    18: "Prefere ficar por cima ou por baixo?",
-    19: "O que você pensa sobre ser tocado por trás?",
-    20: "Se fosse tirar uma peça de roupa da pessoa à sua direita, qual seria?",
-    21: "Descreva o ambiene perfeito para uma noite de sexo?",
-    22: "Amor ou sexo?",
-    23: "Qual é a pessoa mais sexy participando do jogo?",
-    24: "Que tipo de música é perfeito pra transar?",
-    25: "Com que idade você se masturbou pela primeira vez?",
+verdade_amigos_pesado ={
+    0: "Com que idade você se masturbou pela primeira vez?",
+    1: "Qual parte do corpo você beijaria da pessoa a sua esquerda?",
+    2: "Que tipo de pornografia te excita?",
+    3: "Já fez strip-tease?",
+    4: "Já fez sexo virtual?",
+    5: "Em casa ou no motel?",
+    6: "Já foi num sex-shop?",
+    7: "O que você gostaria de comprar em um sex-shop?",
+    8: "Já ficou com alguém comprometido?",
+    9: "Já usou algo pra lubrificar que não era lubrificante?",
+    10: "Já foi pego no flagra transando ou e masturbando?",
+    11: "Já ficou com vontade de vomitar durante o sexo oral?",
+    12: "Já beijou a três?",
+    13: "O que você tem mais medo que te aconteça durante o sexo?",
+    14: "Prefere devagarzinho ou rápido?",
+    15: "Você toparia usar uma cueca/calcinha comestível?",
+    16: "No que vocÊ pensa enquanto está se masturbando?",
+    17: "Qual o segredo pra te deixar louco de tesão?",
+    18: "Qual o seu segredo pra deixar alguém louco de tesão?",
+    19: "Prefere ficar por cima ou por baixo?",
+    20: "O que você pensa sobre ser tocado por trás?",
+    21: "Se fosse tirar uma peça de roupa da pessoa à sua direita, qual seria?",
+    22: "Descreva o ambiene perfeito para uma noite de sexo?",
+    23: "Amor ou sexo?",
+    24: "Qual é a pessoa mais sexy participando do jogo?",
+    25: "Que tipo de música é perfeito pra transar?",
 }
 
 if jogo.lower() == "casal":
@@ -352,8 +351,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        verdade_amigos = verdade_amigos[randint(0, 25)]
-                        print(verdade_amigos)
+                        verdade_amigos_pesado = verdade_amigos_pesado[randint(0, 25)]
+                        print(verdade_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -367,8 +366,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos(pergunta)
+                        desafio_amigos = desafio_amigos[randint(0, 25)]
+                        print(desafio_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -387,8 +386,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos_pesado(pergunta)
+                        verdade_amigos = verdade_amigos[randint(0, 25)]
+                        print(verdade_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -402,8 +401,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos_pesado(pergunta)
+                        desafio_amigos_pesado = desafio_amigos_pesado[randint(0, 25)]
+                        print(desafio_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -471,8 +470,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos_pesado(pergunta)
+                        verdade_amigos_pesado = verdade_amigos_pesado[randint(0, 25)]
+                        print(verdade_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -521,8 +520,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        verdade_amigos = verdade_amigos[randint(0, 25)]
-                        print(verdade_amigos)
+                        verdade_amigos_pesado = verdade_amigos_pesado[randint(0, 25)]
+                        print(verdade_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -564,8 +563,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos_pesado(pergunta)
+                        verdade_amigos_pesado = verdade_amigos_pesado[randint(0, 25)]
+                        print(verdade_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -619,8 +618,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        verdade_amigos = verdade_amigos[randint(0, 25)]
-                        print(verdade_amigos)
+                        verdade_amigos_pesado = verdade_amigos_pesado[randint(0, 25)]
+                        print(verdade_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -666,8 +665,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos_pesado(pergunta)
+                        verdade_amigos_pesado = verdade_amigos_pesado[randint(0, 25)]
+                        print(verdade_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -726,8 +725,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        verdade_amigos = verdade_amigos[randint(0, 25)]
-                        print(verdade_amigos)
+                        verdade_amigos_pesado = verdade_amigos_pesado[randint(0, 25)]
+                        print(verdade_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -777,8 +776,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos_pesado(pergunta)
+                        verdade_amigos_pesado = verdade_amigos_pesado[randint(0, 25)]
+                        print(verdade_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
