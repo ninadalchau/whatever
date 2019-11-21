@@ -36,7 +36,6 @@ desafio_casal_pesado = {
     25: "DESAFIO: Termine todas as frases com sexy até a sua próxima rodada",
 }
 
-
 verdade_casal_pesado = {
     0: "Com que idade você se masturbou pela primeira vez?",
     1: "Qual foi o lugar mais exótico que você se masturbou?",
@@ -130,7 +129,6 @@ verdade_casal = {
     25: "Você já mandou fotos despido(a)",
 }
 
-
 desafio_amigos = {
     0: "DESAFIO: Molhe o rosto e passe farinha",
     1: "DESAFIO: Tente cantar 'galinha pintadinha' com a boca cheia de água",
@@ -160,174 +158,97 @@ desafio_amigos = {
     25: "DESAFIO: Beba um copo de água usando os pés",
 }
 
-def verdade_amigos(pergunta):
-    if pergunta == 0:
-        print("Qua a sua mania mais nojenta?")
-    elif pergunta == 1:
-        print("O que você faria se tivesse com dor de barriga e tivesse que"
-              "\ncagar em um banheiro público, mas acabasse o papel higiênico?")
-    elif pergunta == 2:
-        print("Qual a pessoa mais aleatória que você ja stalkeou nas redes sociais?")
-    elif pergunta == 3:
-        print("Quantos dias vocÊ ja ficou sem tomar banho?")
-    elif pergunta == 4:
-        print("Conte aqui uma coisa que você espera que os seus pais nunca descubrem?")
-    elif pergunta == 5:
-        print("VocÊ já cagou no mato?")
-    elif pergunta == 6:
-        print("O que você faria se fosse do sexo oposto por um dia?")
-    elif pergunta == 7:
-        print("Você já roubou algo?")
-    elif pergunta == 8:
-        print("Qual foi a sua maior conquista?")
-    elif pergunta == 9:
-        print("Você já quis vomitar mas estava em um lugar público e engoliu o vômito??")
-    elif pergunta == 10:
-        print("Qual o momento masi inapropriado em que você peidou?")
-    elif pergunta == 11:
-        print("Você mentiu nesse jogo?")
-    elif pergunta == 12:
-        print("Quando foi a última vez qeu você chorou, poe quê?")
-    elif pergunta == 13:
-        print("Quando foi a última vez que você mijou na cama?")
-    elif pergunta == 14:
-        print("Você já fez cocô nas calça em público?")
-    elif pergunta == 15:
-        print("Se você pudesse mudar algo na sua vida o que seria?")
-    elif pergunta == 16:
-        print("Qual super poder você gostaria de ter?")
-    elif pergunta == 17:
-        print("Quem é a pessoa mais bonita das que estão jogando(você mesmo não pode)?")
-    elif pergunta == 18:
-        print("Com que pessoa você se arrepende de ter se envolvido?")
-    elif pergunta == 19:
-        print("Qual a razão mais boba que você brigou com alguém?")
-    elif pergunta == 20:
-        print("Qual foi o pior presente que vocÊ ja deu pra alguém?")
-    elif pergunta == 21:
-        print("De que pessoa não famosa você tem inveja?")
-    elif pergunta == 22:
-        print("Se você pudesse mudar de vida com uma celebridade por um dia, quem seria?")
-    elif pergunta == 23:
-        print("Qual foi a coisa mais ilegal que você ja fez?")
-    elif pergunta == 24:
-        print("Quantas pessoas você beijou esse ano?")
-    elif pergunta == 25:
-        print("Quem foi a sua primeira paixão, que ano?")
+verdade_amigos = {
 
+    0: "QuaL a sua mania mais nojenta?",
+    1: "O que você faria se tivesse com dor de barriga e tivesse que"
+              "\ncagar em um banheiro público, mas acabasse o papel higiênico?",
+    2: "Qual a pessoa mais aleatória que você ja stalkeou nas redes sociais?",
+    3: "Quantos dias vocÊ ja ficou sem tomar banho?",
+    4: "Conte aqui uma coisa que você espera que os seus pais nunca descubrem?",
+    5: "VocÊ já cagou no mato?",
+    6: "O que você faria se fosse do sexo oposto por um dia?",
+    7: "Você já roubou algo?",
+    8: "Qual foi a sua maior conquista?",
+    9: "Você já quis vomitar mas estava em um lugar público e engoliu o vômito?",
+    10: "Qual o momento masi inapropriado em que você peidou?",
+    11: "Você mentiu nesse jogo?",
+    12: "Quando foi a última vez qeu você chorou, poe quê?",
+    13: "Quando foi a última vez que você mijou na cama?",
+    14: "Você já fez cocô nas calça em público?",
+    15: "Se você pudesse mudar algo na sua vida o que seria?",
+    16: "Qual super poder você gostaria de ter?",
+    17: "Quem é a pessoa mais bonita das que estão jogando(você mesmo não pode)?",
+    18: "Com que pessoa você se arrepende de ter se envolvido?",
+    19: "Qual a razão mais boba que você brigou com alguém?",
+    20: "Qual foi o pior presente que vocÊ ja deu pra alguém?",
+    21: "De que pessoa não famosa você tem inveja?",
+    22: "Se você pudesse mudar de vida com uma celebridade por um dia, quem seria?",
+    23: "Qual foi a coisa mais ilegal que você ja fez?",
+    24: "Quantas pessoas você beijou esse ano?",
+    25: "Quem foi a sua primeira paixão, que ano?",
+}
 
-def desafio_amigos_pesado(pergunta):
-    if pergunta == 0:
-        print("DESAFIO: Simule o seu olhar mais sexy para alguém que esteja jogando")
-    elif pergunta == 1:
-        print("DESAFIO: Morda de leve o pescoço de alguém da roda")
-    elif pergunta == 2:
-        print("DESAFIO: Com os olhos fechados, encoste a mão em alguém da roda "
-              "\ne adivinhe qual é a parte do corpo (com consentimento)")
-    elif pergunta == 3:
-        print("DESAFIO: Simule um sexo oral com uma fruta")
-    elif pergunta == 4:
-        print("DESAFIO: Beije alguém da roda (com consentimento)")
-    elif pergunta == 5:
-        print("DESAFIO: Coloque um cubo de gelo na boca e beije "
-              "\no pescoço da pessoa a sua direita")
-    elif pergunta == 6:
-        print("DESAFIO: Mande uma mensagem de voz sexy para o seu crush")
-    elif pergunta == 7:
-        print("DESAFIO: Feche os olhos, alguém da roda de te dá um "
-              "\nbeijo e você precisa adivinhar quem é")
-    elif pergunta == 8:
-        print("DESAFIO: De um beijo (do jeito que quiser) em todos os participantes")
-    elif pergunta == 9:
-        print("DESAFIO: Sente-se no colo de alguém por 10 min")
-    elif pergunta == 10:
-        print("DESAFIO: Diga algo muito sujo a pessoa a sua esquerda")
-    elif pergunta == 11:
-        print("DESAFIO: De uma aula de educação sexual")
-    elif pergunta == 12:
-        print("DESAFIO: De uma mordida em alguém da roda")
-    elif pergunta == 13:
-        print("DESAFIO: Ensine os outros integrantes a fazer o quadradinho")
-    elif pergunta == 14:
-        print("DESAFIO: Ensine a fazer o sexo oral perfeito utilizando uma banana")
-    elif pergunta == 15:
-        print("DESAFIO: Deixe que alguém do grupo faça um chupão nas suas costas")
-    elif pergunta == 16:
-        print("DESAFIO: Simule um orgasmo")
-    elif pergunta == 17:
-        print("DESAFIO: Troque de blusa com algum integrante do grupo")
-    elif pergunta == 18:
-        print("DESAFIO: Ensine o grupo a fazer um strip-tease")
-    elif pergunta == 19:
-        print("DESAFIO: Escolha duas pessoas e deem um beijo triplo")
-    elif pergunta == 20:
-        print("DESAFIO: Bata na bunda de uma mulher e um homem da roda")
-    elif pergunta == 21:
-        print("DESAFIO: Faça uma posição sexy e deixe todos os outros apreciarem")
-    elif pergunta == 22:
-        print("DESAFIO: Imite um coelho transando intensamente com um travesseiro")
-    elif pergunta == 23:
-        print("DESAFIO: Mostre a cor da sua cueca ou calcinha para todos")
-    elif pergunta == 24:
-        print("DESAFIO: Permite que tirem uma foto sua com outra pessoa na posição bunda-bunda")
-    elif pergunta == 25:
-        print("DESAFIO: Imite como uma gata mia ao transar")
+desafio_amigos_pesado = {
+    0: "DESAFIO: Simule o seu olhar mais sexy para alguém que esteja jogando",
+    1: "DESAFIO: Morda de leve o pescoço de alguém da roda",
+    2: "DESAFIO: Com os olhos fechados, encoste a mão em alguém da roda "
+              "\ne adivinhe qual é a parte do corpo (com consentimento)",
+    3: "DESAFIO: Simule um sexo oral com uma fruta",
+    4: "DESAFIO: Beije alguém da roda (com consentimento)",
+    5: "DESAFIO: Coloque um cubo de gelo na boca e beije "
+              "\no pescoço da pessoa a sua direita",
+    6: "DESAFIO: Mande uma mensagem de voz sexy para o seu crush",
+    7: "DESAFIO: Feche os olhos, alguém da roda de te dá um "
+              "\nbeijo e você precisa adivinhar quem é",
+    8: "DESAFIO: De um beijo (do jeito que quiser) em todos os participantes",
+    9: "DESAFIO: Sente-se no colo de alguém por 10 min",
+    10: "DESAFIO: Diga algo muito sujo a pessoa a sua esquerda",
+    11: "DESAFIO: De uma aula de educação sexual",
+    12: "DESAFIO: De uma mordida em alguém da roda",
+    13: "DESAFIO: Ensine os outros integrantes a fazer o quadradinho",
+    14: "DESAFIO: Ensine a fazer o sexo oral perfeito utilizando uma banana",
+    15: "DESAFIO: Deixe que alguém do grupo faça um chupão nas suas costas",
+    16: "DESAFIO: Simule um orgasmo",
+    17: "DESAFIO: Troque de blusa com algum integrante do grupo",
+    18: "DESAFIO: Ensine o grupo a fazer um strip-tease",
+    19: "DESAFIO: Escolha duas pessoas e deem um beijo triplo",
+    20: "DESAFIO: Bata na bunda de uma mulher e um homem da roda",
+    21: "DESAFIO: Faça uma posição sexy e deixe todos os outros apreciarem",
+    22: "DESAFIO: Imite um coelho transando intensamente com um travesseiro",
+    23: "DESAFIO: Mostre a cor da sua cueca ou calcinha para todos",
+    24: "DESAFIO: Permite que tirem uma foto sua com outra pessoa na posição bunda-bunda",
+    25: "DESAFIO: Imite como uma gata miando", 
+}
 
-
-def verdade_amigos_pesado(pergunta):
-    if pergunta == 0:
-        print("Qual parte do corpo você beijaria da pessoa a sua esquerda?")
-    elif pergunta == 1:
-        print("Que tipo de pornografia te excita?")
-    elif pergunta == 2:
-        print("Já fez strip-tease?")
-    elif pergunta == 3:
-        print("Já fez sexo virtual?")
-    elif pergunta == 4:
-        print("Em casa ou no motel?")
-    elif pergunta == 5:
-        print("Já foi num sex-shop?")
-    elif pergunta == 6:
-        print("O que você gostaria de comprar em um sex-shop?")
-    elif pergunta == 7:
-        print("Já ficou com alguém comprometido?")
-    elif pergunta == 8:
-        print("Já usou algo pra lubrificar que não era lubrificante?")
-    elif pergunta == 9:
-        print("Já foi pego no flagra transando ou e masturbando?")
-    elif pergunta == 10:
-        print("Já ficou com vontade de vomitar durante o sexo oral?")
-    elif pergunta == 11:
-        print("já beijou a três?")
-    elif pergunta == 12:
-        print("O que você tem mais medo que te aconteça durante o sexo?")
-    elif pergunta == 13:
-        print("Prefere devagarzinho ou rápido?")
-    elif pergunta == 14:
-        print("Você toparia usar uma cueca/calcinha comestível?")
-    elif pergunta == 15:
-        print("No que vocÊ pensa enquanto está se masturbando?")
-    elif pergunta == 16:
-        print("Qual o segredo pra te deixar louco de tesão?")
-    elif pergunta == 17:
-        print("Qual o seu segredo pra deixar alguém louco de tesão?")
-    elif pergunta == 18:
-        print("Prefere ficar por cima ou por baixo?")
-    elif pergunta == 19:
-        print("O que você pensa sobre ser tocado por trás?")
-    elif pergunta == 20:
-        print("Se fosse tirar uma peça de roupa da pessoa à sua direita, qual seria?")
-    elif pergunta == 21:
-        print("Descreva o ambiene perfeito para uma noite de sexo?")
-    elif pergunta == 22:
-        print("Amor ou sexo?")
-    elif pergunta == 23:
-        print("Qual é a pessoa mais sexy participando do jogo?")
-    elif pergunta == 24:
-        print("Que tipo de música é perfeito pra transar?")
-    elif pergunta == 25:
-        print("Com que idade você se masturbou pela primeira vez?")
-
+verdade_amigos_pesado = {
+    0: "Qual parte do corpo você beijaria da pessoa a sua esquerda?",
+    1: "Que tipo de pornografia te excita?",
+    2: "Já fez strip-tease?",
+    3: "Já fez sexo virtual?",
+    4: "Em casa ou no motel?",
+    5: "Já foi num sex-shop?",
+    6: "O que você gostaria de comprar em um sex-shop?",
+    7: "Já ficou com alguém comprometido?",
+    8: "Já usou algo pra lubrificar que não era lubrificante?",
+    9: "Já foi pego no flagra transando ou e masturbando?",
+    10: "Já ficou com vontade de vomitar durante o sexo oral?",
+    11: "já beijou a três?",
+    12: "O que você tem mais medo que te aconteça durante o sexo?",
+    13: "Prefere devagarzinho ou rápido?",
+    14: "Você toparia usar uma cueca/calcinha comestível?",
+    15: "No que vocÊ pensa enquanto está se masturbando?",
+    16: "Qual o segredo pra te deixar louco de tesão?",
+    17: "Qual o seu segredo pra deixar alguém louco de tesão?",
+    18: "Prefere ficar por cima ou por baixo?",
+    19: "O que você pensa sobre ser tocado por trás?",
+    20: "Se fosse tirar uma peça de roupa da pessoa à sua direita, qual seria?",
+    21: "Descreva o ambiene perfeito para uma noite de sexo?",
+    22: "Amor ou sexo?",
+    23: "Qual é a pessoa mais sexy participando do jogo?",
+    24: "Que tipo de música é perfeito pra transar?",
+    25: "Com que idade você se masturbou pela primeira vez?",
+}
 
 if jogo.lower() == "casal":
     nome1 = input("Nome1:")
@@ -351,8 +272,8 @@ if jogo.lower() == "casal":
                 manual1 = manual1.lower()
                 manual1 = manual1.replace("ã", "a")
                 if manual1 == "nao":
-                    pergunta = randint(0, 25)
-                    verdade_casal(pergunta)
+                    verdade_casal = verdade_casal[randint(0, 25)]
+                    print(verdade_casal)
                     input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                 else:
                     input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -431,8 +352,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos(pergunta)
+                        verdade_amigos = verdade_amigos[randint(0, 25)]
+                        print(verdade_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -511,8 +432,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos(pergunta)
+                        verdade_amigos = verdade_amigos[randint(0, 25)]
+                        print(verdade_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -528,8 +449,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos(pergunta)
+                        desafio_amigos = desafio_amigos[randint(0, 25)]
+                        print(desafio_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -567,8 +488,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos_pesado(pergunta)
+                        desafio_amigos_pesado = desafio_amigos_pesado[randint(0, 25)]
+                        print(desafio_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -600,8 +521,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos(pergunta)
+                        verdade_amigos = verdade_amigos[randint(0, 25)]
+                        print(verdade_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -619,8 +540,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos(pergunta)
+                        desafio_amigos = desafio_amigos[randint(0, 25)]
+                        print(desafio_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -662,8 +583,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos_pesado(pergunta)
+                        desafio_amigos_pesado = desafio_amigos_pesado[randint(0, 25)]
+                        print(desafio_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -698,8 +619,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos(pergunta)
+                        verdade_amigos = verdade_amigos[randint(0, 25)]
+                        print(verdade_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -719,8 +640,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos(pergunta)
+                        desafio_amigos = desafio_amigos[randint(0, 25)]
+                        print(desafio_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -766,8 +687,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos_pesado(pergunta)
+                        desafio_amigos_pesado = desafio_amigos_pesado[randint(0, 25)]
+                        print(desafio_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -805,8 +726,8 @@ else:
                     manual1 = manual1.lower()
                     manual1 = manual1.replace("ã", "a")
                     if manual1 == "nao":
-                        pergunta = randint(0, 25)
-                        verdade_amigos(pergunta)
+                        verdade_amigos = verdade_amigos[randint(0, 25)]
+                        print(verdade_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -828,8 +749,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos(pergunta)
+                        desafio_amigos = desafio_amigos[randint(0, 25)]
+                        print(desafio_amigos)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
@@ -879,8 +800,8 @@ else:
                     manual2 = manual2.lower()
                     manual2 = manual2.replace("ã", "a")
                     if manual2 == "nao":
-                        pergunta = randint(0, 25)
-                        desafio_amigos_pesado(pergunta)
+                        desafio_amigos_pesado = desafio_amigos_pesado[randint(0, 25)]
+                        print(desafio_amigos_pesado)
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
                     else:
                         input(" ""\nPara o próximo verdade ou desafio, aperte a tecla de replay...")
